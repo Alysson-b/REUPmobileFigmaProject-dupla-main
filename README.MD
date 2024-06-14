@@ -1,4 +1,4 @@
-#  Projeto-Mobile-CRM 📲
+#  Projeto-Dupla-Mobile-CRM 📲
 
 ## o que é CRM?🤔
 

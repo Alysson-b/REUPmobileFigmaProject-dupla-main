@@ -1,12 +1,12 @@
 .main-img{
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
     flex-shrink: 0;
 }
 
 .bola{
-    display: none;
+    display: flex;
     position: absolute;
     top: 163px;
     right: 24px;
@@ -25,13 +25,13 @@
 
 /* ABA INICIAL */
 .section-01{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
 /* ABA CASO CLIQUE EM CREATE MEMBBERSHIP */
 .section-02{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 

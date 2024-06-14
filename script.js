@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.querySelector('#email');
     const password = document.querySelector('#password');
     const createMenber = document.querySelector('.member')
+    const forgotPassword = document.querySelector('#ForgotPassword')
+    const forgotPasswordConfirm = document.querySelector('#forgot-password-email')
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -36,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isValid) {
-            // Esconder elementos ao submeter o formulário
+           
             document.querySelector('.main-img').style.display = 'none';
             document.querySelector('.bola').style.display = 'none';
             document.querySelector('.section-01').style.display = 'none';
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function isValidEmail(email) {
-        return  /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i.test(email);
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); 
     }
 
 
@@ -81,5 +83,16 @@ document.querySelector('#createMember').addEventListener('click', function(e){
 
 }
 })
+
+document.querySelector('#ForgotPassword').addEventListener('click', function(e){
+        e.preventDefault();
+
+        document.querySelector('.main-img').style.display = 'none';
+        document.querySelector('.bola').style.display = 'none';
+        document.querySelector('.section-01').style.display = 'none';
+        document.querySelector('.section-03').style.display = 'flex';
+
+})
+
 
 });

@@ -51,7 +51,7 @@
                         <input type="checkbox" name="" id="checkbox">
                         <label for="checkbox">Remember</label>
                     </div>
-                    <a href="">Forgot Password</a>
+                    <a href="" id="ForgotPassword">Forgot Password</a>
                 </div>
 
                 <button type="submit" class="sign">Sign In</button>
@@ -91,10 +91,14 @@
                 <p>Enter your e-mail address and we’ll send you a link to reset your password</p>
             </div>
 
-            <div>
+            <form>
+            <div class="form-control">
                 <input type="email" name="" id="forgot-password-email" placeholder="Email">
-                <button>Reset password</button>
+                <span></span>
+                <button type="submit">Reset password</button>
             </div>
+        </form>
+            
         </section>
 
         <!-- Seção 04 -->
@@ -104,11 +108,15 @@
                 <p>What would you like your new password <br> to be?</p>
             </div>
 
+        <form action="">
             <div>
                 <input type="password" name="" id="reset-password" placeholder="Password">
                 <input type="password" name="" id="confirm-password" placeholder="Confirm password">
-                <button>Save</button>
+                <span></span>
+                <button type="submit">Save</button>
             </div>
+        </form>
+
         </section>
 
         <!-- Seção da Home -->
@@ -253,5 +261,6 @@
 
         </body>    
             <script src="./script.js"></script>
-            <script src="./assets/form.js"></script>
+            <script src="./form.js"></script>
+            <script src="./assets/form2.js"></script>
 </html>

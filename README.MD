@@ -29,9 +29,9 @@
 
 ## 🧑‍💻 Creditos
 
-DEV:[Alisson Barbosa](https://github.com/Alysson-b)
-
 DEV: [Victor Lima](https://github.com/t1viktor)
+
+DEV:[Alisson Barbosa](https://github.com/Alysson-b)
 
 PROFESSOR: [Luan Oliveira](https://www.linkedin.com/in/luanpdd/)
 

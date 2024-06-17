@@ -111,14 +111,14 @@ margin-bottom: 30px;
     flex-direction: column;
     justify-content: center;
     width: 375px;
-height: 261px;
-background: #FFF;
-position: fixed;
-bottom: 0;
-font-family: "Inter", sans-serif;
-padding: 0 24px;
-animation-name:bounce-in-bottom;
-animation-duration: 1s;
+    height: 261px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    font-family: "Inter", sans-serif;
+    padding: 0 24px;
+    animation-name:bounce-in-bottom;
+    animation-duration: 1s;
 }
 
 .preference{
@@ -126,12 +126,12 @@ animation-duration: 1s;
     flex-direction: column;
     bottom: 0;
     position: fixed;
-height: 100vh;
-background: #FFF;
-padding: 0 24px;
-align-items: center;
--webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    height: 100vh;
+    background: #FFF;
+    padding: 0 24px;
+    align-items: center;
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .form-Control small{

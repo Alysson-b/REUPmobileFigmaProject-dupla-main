@@ -1,4 +1,4 @@
-#  Projeto-Dupla-Mobile-CRM 📲
+#  Projeto-Mobile-CRM 📲
 
 ## o que é CRM?🤔
 
@@ -29,9 +29,9 @@
 
 ## 🧑‍💻 Creditos
 
-DEV: [Victor Lima](https://github.com/t1viktor)
-
 DEV:[Alisson Barbosa](https://github.com/Alysson-b)
+
+DEV: [Victor Lima](https://github.com/t1viktor)
 
 PROFESSOR: [Luan Oliveira](https://www.linkedin.com/in/luanpdd/)
 

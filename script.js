@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector('.section-01').style.display = 'none';
             document.querySelector('.home-img').style.display = 'flex';
             document.querySelector('.home-01').style.display = 'flex';
+            showCookies()
         }
     }
 
@@ -61,27 +62,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); 
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        return regex.test(email); 
     }
+    function showCookies() {
+        setTimeout(() => {
+            document.querySelector('.cookies').style.display = 'flex';
+        }, 5000); 
 
-
+    }
+   function showPreference(){
+        setTimeout(() => {
+            document.querySelector('.preference').style.display = 'flex'; 
+        }, 5000); 
+       
+    }
+    
+/*     const cookiesPrefences = document.querySelector('.show-preference');
+    if(cookiesPrefences){
+        cookiesPrefences.addEventListener('click', function(e){
+            e.preventDefault()
+            showPreference();
+        })
+    }  */
 
 
 document.querySelector('#createMember').addEventListener('click', function(e){
-        e.preventDefault
-
-
-    let emailValue = email.value.trim();
-    let passValue = password.value.trim();
-
-    if (emailValue === '' || passValue === '') {
+        e.preventDefault();
 
         document.querySelector('.main-img').style.display = 'none';
-        document.querySelector('.bola').style.display = 'none';
+        document.querySelector('.bola').style.display = 'none !important';
         document.querySelector('.section-01').style.display = 'none';
         document.querySelector('.section-02').style.display = 'flex';
 
-}
+
 })
 
 document.querySelector('#ForgotPassword').addEventListener('click', function(e){

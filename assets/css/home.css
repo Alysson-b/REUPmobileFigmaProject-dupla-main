@@ -212,14 +212,6 @@ line-height: normal;
     margin-bottom: 20px;
 }
 
-.today {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-
 .this-week img{
     width: 120px;
 height: 120px;
@@ -262,15 +254,6 @@ line-height: normal;
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-}
-
-.coupon-div{
-    display: none;
-    width: 345px;
-height: 103px;
-flex-shrink: 0;
-margin-bottom: 30px;
-
 }
 
 aside{

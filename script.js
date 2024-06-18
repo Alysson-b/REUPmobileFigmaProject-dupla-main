@@ -38,13 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isValid) {
-           
-            document.querySelector('.main-img').style.display = 'none';
-            document.querySelector('.bola').style.display = 'none';
-            document.querySelector('.section-01').style.display = 'none';
+           sectionNone();
             document.querySelector('.home-img').style.display = 'flex';
             document.querySelector('.home-01').style.display = 'flex';
-            showCookies()
+        }
+        if (isValid) {
+            setTimeout(function() {
+                if (isHomeVisible()) {
+                    cookies.style.display = 'flex';
+                }
+            }, 5000);
         }
     }
 
@@ -62,51 +65,68 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function isValidEmail(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        return regex.test(email); 
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); 
     }
-    function showCookies() {
-        setTimeout(() => {
-            document.querySelector('.cookies').style.display = 'flex';
-        }, 5000); 
 
+    function sectionNone(){
+        document.querySelector('.main-img').style.display = 'none';
+        document.querySelector('.bola').style.display = 'none';
+        document.querySelector('.section-01').style.display = 'none';
     }
-   function showPreference(){
-        setTimeout(() => {
-            document.querySelector('.preference').style.display = 'flex'; 
-        }, 5000); 
-       
-    }
-    
-/*     const cookiesPrefences = document.querySelector('.show-preference');
-    if(cookiesPrefences){
-        cookiesPrefences.addEventListener('click', function(e){
-            e.preventDefault()
-            showPreference();
-        })
-    }  */
 
 
 document.querySelector('#createMember').addEventListener('click', function(e){
-        e.preventDefault();
+        e.preventDefault
 
-        document.querySelector('.main-img').style.display = 'none';
-        document.querySelector('.bola').style.display = 'none !important';
-        document.querySelector('.section-01').style.display = 'none';
+
+    let emailValue = email.value.trim();
+    let passValue = password.value.trim();
+
+    if (emailValue === '' || passValue === '') {
+
+       sectionNone();
         document.querySelector('.section-02').style.display = 'flex';
 
-
+}
 })
 
 document.querySelector('#ForgotPassword').addEventListener('click', function(e){
         e.preventDefault();
 
-        document.querySelector('.main-img').style.display = 'none';
-        document.querySelector('.bola').style.display = 'none';
-        document.querySelector('.section-01').style.display = 'none';
+        sectionNone();
         document.querySelector('.section-03').style.display = 'flex';
 
 })
+const cookies = document.querySelector('.cookies');
+const preference = document.querySelector('.preference');
+const showPreferenceBtn = document.querySelector('.show-preference');
+const closePreferenceBtn = document.querySelector('.close-preference');
+const acceptAllBtn = document.querySelector('.accept-all');
+const confirmBtn = document.querySelector('.cont-3');
 
+function isHomeVisible() {
+    // Verifica se pelo menos um dos elementos com a classe .home está visível
+    return document.querySelector('.home-img').style.display === 'flex' ||
+           document.querySelector('.home-01').style.display === 'flex';
+}
+showPreferenceBtn.addEventListener('click', function(e){
+    e.preventDefault();
 
+    cookies.style.display ='none'
+    preference.style.display = 'flex'
+})
+closePreferenceBtn.addEventListener('click', function(e){
+    e.preventDefault()
+
+    preference.style.display = 'none'
+    cookies.style.display = 'flex'
+})
+acceptAllBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    cookies.style.display = 'none'
+})
+confirmBtn.addEventListener('click', function(e){
+    e.preventDefault()
+    preference.style.display = 'none'
+})  
 });

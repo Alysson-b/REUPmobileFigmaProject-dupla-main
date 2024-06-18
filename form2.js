@@ -1,3 +1,4 @@
+
 document.querySelector('.section-03 form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -23,8 +24,7 @@ document.querySelector('.section-03 form').addEventListener('submit', function(e
 
 
 function isValidEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/ 
-    return regex.test(email);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); 
 }
 
 document.querySelector('.section-04 form').addEventListener('submit', function(e) {
@@ -60,9 +60,8 @@ document.querySelector('.section-04 form').addEventListener('submit', function(e
     
     if(isValid){
         document.querySelector('.section-04').style.display = 'none';
-        document.querySelector('.main-img').style.display = 'flex';
-        document.querySelector('.bola').style.display = 'flex';
-        document.querySelector('.section-01').style.display = 'flex';
+        document.querySelector('.home-img').style.display = 'flex';
+        document.querySelector('.home-01').style.display = 'flex';
     }
 })
 function setError(input, message) {

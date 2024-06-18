@@ -239,24 +239,6 @@ background: #6F5FE7;
 margin-bottom: 60px;
 }
 
-.confirm-email{
-    width: 375px;
-height: 50vh;
-flex-shrink: 0;
-fill: #FFF;
-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.10));
-background-color: var(--colortext-primary);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-padding: 0 24px;
-font-family: "Inter", sans-serif;
-position: fixed;
-bottom: 0;
-
-animation-name: inOutAnimation;
-animation-duration: 1s;
-}
-
 @keyframes inOutAnimation {
     0%{
         transform: translateX(800px) rotateY(-30deg) scale(0);
@@ -409,6 +391,31 @@ margin-bottom: 60px;
     }
   }
 
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 .cookies h2{
 
     color: #333;
@@ -463,13 +470,6 @@ letter-spacing: -0.18px;
 text-decoration-line: underline;
 margin-bottom: 25px;
 text-align: center;
-}
-
-.privacy-preference{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2px;
-    align-items: center;
 }
 
 @-webkit-keyframes fade-in-bottom {

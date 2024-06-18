@@ -1,37 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.Campaigns').addEventListener('click', function(e) {
-        // Define the elements
-        let today = document.querySelector('#today');
-        let thisWeek = document.querySelector('#this-week')
+    let today = document.querySelector('#today');
+    let todayC = document.querySelector('.today');
+    let thisWeek = document.querySelector('#thisweek');
+    let thisWeekC = document.querySelector('.this-week');
+    let mycoupons = document.querySelector('#mycoupons');
+    let coupondiv = document.querySelector('.coupon-div')
 
-     
-        if (home) {
-            home.style.display = 'none';
-        }
-        if (homeImg) {
-            homeImg.style.display = 'none';
-        }
-        if (today) {
-            today.style.display = 'flex';
-        }
-    });
+    
+    if (today) {
+        today.addEventListener('click', function(e) {
+            e.preventDefault();
+            todayC.style.display = 'flex';
+            todayC.classList.toggle('none');
+            todayC.scrollIntoView({ behavior: 'smooth' });
+            thisWeekC.style.display = 'none';
+            coupondiv.style.display = 'none';
 
+        });
+    }
 
-    document.querySelector('.Campaigns').addEventListener('click', function(e) {
-        
-        let thisWeek = document.querySelector('#this-week');
-        let home = document.querySelector('.home-01');
-        let homeImg = document.querySelector('.home-img');
+    if (thisWeek) {
+        thisWeek.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            thisWeekC.style.display = 'flex';
+            thisWeekC.classList.toggle('none');
+            thisWeekC.scrollIntoView({ behavior: 'smooth' });
+            todayC.style.display = 'none';
+            coupondiv.style.display = 'none';
+        });
+    }
 
-        
-        if (home) {
-            home.style.display = 'none';
-        }
-        if (homeImg) {
-            homeImg.style.display = 'none';
-        }
-        if (thisWeek) {
-            thisWeek.style.display = 'flex';
-        }
-    });
+    if (mycoupons) {
+        mycoupons.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            coupondiv.style.display = 'flex';
+            coupondiv.classList.toggle('none');
+            coupondiv.scrollIntoView({ behavior: 'smooth' });
+            todayC.style.display = 'none';
+            thisWeekC.style.display = 'none';
+        });
+    }
 });

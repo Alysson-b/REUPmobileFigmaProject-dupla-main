@@ -16,17 +16,17 @@
     <!-- Primeiro header -->
     <header>
         <img class="main-img" src="./assets/img/mainImgHome.png" alt="">
-        <div class="bola">
-            <img src="./assets/img/Logo.png" alt="">
-        </div>
+       <!--  <div class="bola">
+            <img class="bola2" src="./assets/img/Logo.png" alt="">
+        </div> -->
     </header>
 
     <!-- Segundo header (para Home) -->
     <header>
         <img class="home-img" src="./assets/img/Rectangle 12629.png" alt="">
-        <div class="bola">
-            <img src="./assets/img/Logo.png" alt="">
-        </div>
+      <!--   <div class="bola">
+            <img class="bola2" src="./assets/img/Logo.png" alt="">
+        </div> -->
     </header>
     
     <!-- Conteúdo principal -->
@@ -110,8 +110,8 @@
 
         <form action="">
             <div>
-                <input type="password" name="" id="reset-password" maxlength="12" placeholder="Password">
-                <input type="password" name="" id="confirm-password" maxlength="12" placeholder="Confirm password">
+                <input type="password" name="" id="reset-password" placeholder="Password">
+                <input type="password" name="" id="confirm-password" placeholder="Confirm password">
                 <span></span>
                 <button type="submit">Save</button>
             </div>
@@ -129,7 +129,7 @@
                 <p>The CRM platform that is simple to set up and easy to use Givy lets you handle all your customers, campaign, and coupon in one place.</p>
                 <div class="button-home-01">
                     <button>Branch</button>
-                    <button>My <br> Coupons</button>
+                    <div id="mycoupons"><button>My <br> Coupons</button></div>
                     <div class="bola-02"> <img src="./assets/img/ScanQR.png" alt=""></div>
                 </div>
                 <div class="home-rewards">
@@ -159,7 +159,7 @@
                     <h2>Campaigns</h2>
                     <div class="home-buttons">
                        <a id="today" href="">Today</a>
-                       <a id="this-week" href="">This week</a>
+                       <a id="thisweek" href="">This week</a>
                        <a href="">This month</a>
                        <a href="">Next Month</a>
                     </div>
@@ -323,11 +323,14 @@
                 <h3>Necessary</h3>
                 <p>Necessary cookies are required to help a website...</p>
             </div>
+            <br>
 
             <div>
                 <h3>Analytics</h3>
                 <p>Analytics cookies help website to understand...</p>
             </div>
+
+            <br>
 
             <div>
                 <h3>Marketing</h3>

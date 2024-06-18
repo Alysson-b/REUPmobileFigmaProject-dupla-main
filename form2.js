@@ -7,6 +7,7 @@ document.querySelector('.section-03 form').addEventListener('submit', function(e
     let isValid = true; 
 
     if (emailValue === '') {
+
         setError(emailInput, 'Insira um email');
         isValid = false;
     } else if (!isValidEmail(emailValue)) {
@@ -59,10 +60,11 @@ document.querySelector('.section-04 form').addEventListener('submit', function(e
     }
     
     if(isValid){
+        document.querySelector('.confirm-email').style.display = 'flex';
         document.querySelector('.section-04').style.display = 'none';
-        document.querySelector('.main-img').style.display = 'flex';
-        document.querySelector('.bola').style.display = 'flex';
         document.querySelector('.section-01').style.display = 'flex';
+        document.querySelector('.main-img').style.display = 'flex';
+        document.querySelector('bola2').style.display = 'flex';
     }
 })
 function setError(input, message) {

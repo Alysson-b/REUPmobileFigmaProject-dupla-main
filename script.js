@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const createMenber = document.querySelector('.member')
     const forgotPassword = document.querySelector('#ForgotPassword')
     const forgotPasswordConfirm = document.querySelector('#forgot-password-email')
-    const cookies = document.querySelector('.cookies');
-    const preference = document.querySelector('.preference');
-    const showPreferenceBtn = document.querySelector('.show-preference');
-    const closePreferenceBtn = document.querySelector('.close-preference');
-    const acceptAllBtn = document.querySelector('.accept-all');
-    const confirmBtn = document.querySelector('.cont-3');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -76,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function sectionNone(){
         document.querySelector('.main-img').style.display = 'none';
-        document.querySelector('.bola').style.display = 'none';
         document.querySelector('.section-01').style.display = 'none';
     }
 
@@ -98,35 +91,48 @@ document.querySelector('#createMember').addEventListener('click', function(e){
 
 document.querySelector('#ForgotPassword').addEventListener('click', function(e){
         e.preventDefault();
+        let bola = document.querySelector('.bola');
+        let sec3 = document.querySelector('.section-03')
 
         sectionNone();
-        document.querySelector('.section-03').style.display = 'flex';
+        sec3.style.display = 'flex';
 
+        if (sec3.style.display === 'flex') {
+            bola.style.display = 'none';
+        }
+        
 })
 
-        function isHomeVisible() {
+const cookies = document.querySelector('.cookies');
+const preference = document.querySelector('.preference');
+const showPreferenceBtn = document.querySelector('.show-preference');
+const closePreferenceBtn = document.querySelector('.close-preference');
+const acceptAllBtn = document.querySelector('.accept-all');
+const confirmBtn = document.querySelector('.cont-3');
 
-            return document.querySelector('.home-img').style.display === 'flex' ||
-                document.querySelector('.home-01').style.display === 'flex';
-        }
-        showPreferenceBtn.addEventListener('click', function(e){
-            e.preventDefault();
+function isHomeVisible() {
+    // Verifica se pelo menos um dos elementos com a classe .home está visível
+    return document.querySelector('.home-img').style.display === 'flex' ||
+           document.querySelector('.home-01').style.display === 'flex';
+}
+showPreferenceBtn.addEventListener('click', function(e){
+    e.preventDefault();
 
-            cookies.style.display ='none'
-            preference.style.display = 'flex'
-        })
-        closePreferenceBtn.addEventListener('click', function(e){
-            e.preventDefault()
+    cookies.style.display ='none'
+    preference.style.display = 'flex'
+})
+closePreferenceBtn.addEventListener('click', function(e){
+    e.preventDefault()
 
-            preference.style.display = 'none'
-            cookies.style.display = 'flex'
-        })
-        acceptAllBtn.addEventListener('click', function(e){
-            e.preventDefault();
-            cookies.style.display = 'none'
-        })
-        confirmBtn.addEventListener('click', function(e){
-            e.preventDefault()
-            preference.style.display = 'none'
-        })  
-        });
+    preference.style.display = 'none'
+    cookies.style.display = 'flex'
+})
+acceptAllBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    cookies.style.display = 'none'
+})
+confirmBtn.addEventListener('click', function(e){
+    e.preventDefault()
+    preference.style.display = 'none'
+})  
+});

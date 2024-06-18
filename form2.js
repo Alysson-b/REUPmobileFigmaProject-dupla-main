@@ -60,8 +60,9 @@ document.querySelector('.section-04 form').addEventListener('submit', function(e
     
     if(isValid){
         document.querySelector('.section-04').style.display = 'none';
-        document.querySelector('.home-img').style.display = 'flex';
-        document.querySelector('.home-01').style.display = 'flex';
+        document.querySelector('.main-img').style.display = 'flex';
+        document.querySelector('.bola').style.display = 'flex';
+        document.querySelector('.section-01').style.display = 'flex';
     }
 })
 function setError(input, message) {

@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const createMenber = document.querySelector('.member')
     const forgotPassword = document.querySelector('#ForgotPassword')
     const forgotPasswordConfirm = document.querySelector('#forgot-password-email')
+    const cookies = document.querySelector('.cookies');
+    const preference = document.querySelector('.preference');
+    const showPreferenceBtn = document.querySelector('.show-preference');
+    const closePreferenceBtn = document.querySelector('.close-preference');
+    const acceptAllBtn = document.querySelector('.accept-all');
+    const confirmBtn = document.querySelector('.cont-3');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -97,36 +103,30 @@ document.querySelector('#ForgotPassword').addEventListener('click', function(e){
         document.querySelector('.section-03').style.display = 'flex';
 
 })
-const cookies = document.querySelector('.cookies');
-const preference = document.querySelector('.preference');
-const showPreferenceBtn = document.querySelector('.show-preference');
-const closePreferenceBtn = document.querySelector('.close-preference');
-const acceptAllBtn = document.querySelector('.accept-all');
-const confirmBtn = document.querySelector('.cont-3');
 
-function isHomeVisible() {
-    // Verifica se pelo menos um dos elementos com a classe .home está visível
-    return document.querySelector('.home-img').style.display === 'flex' ||
-           document.querySelector('.home-01').style.display === 'flex';
-}
-showPreferenceBtn.addEventListener('click', function(e){
-    e.preventDefault();
+        function isHomeVisible() {
 
-    cookies.style.display ='none'
-    preference.style.display = 'flex'
-})
-closePreferenceBtn.addEventListener('click', function(e){
-    e.preventDefault()
+            return document.querySelector('.home-img').style.display === 'flex' ||
+                document.querySelector('.home-01').style.display === 'flex';
+        }
+        showPreferenceBtn.addEventListener('click', function(e){
+            e.preventDefault();
 
-    preference.style.display = 'none'
-    cookies.style.display = 'flex'
-})
-acceptAllBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    cookies.style.display = 'none'
-})
-confirmBtn.addEventListener('click', function(e){
-    e.preventDefault()
-    preference.style.display = 'none'
-})  
-});
+            cookies.style.display ='none'
+            preference.style.display = 'flex'
+        })
+        closePreferenceBtn.addEventListener('click', function(e){
+            e.preventDefault()
+
+            preference.style.display = 'none'
+            cookies.style.display = 'flex'
+        })
+        acceptAllBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            cookies.style.display = 'none'
+        })
+        confirmBtn.addEventListener('click', function(e){
+            e.preventDefault()
+            preference.style.display = 'none'
+        })  
+        });

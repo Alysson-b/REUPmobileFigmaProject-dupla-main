@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.home-01').addEventListener('click', function(e) {
+    document.querySelector('.Campaigns').addEventListener('click', function(e) {
         // Define the elements
-        let today = document.querySelector('.today');
-        let home = document.querySelector('.home-01');
-        let homeImg = document.querySelector('.home-img');
+        let today = document.querySelector('#today');
+        let thisWeek = document.querySelector('#this-week')
 
-        // Ensure the elements exist before modifying styles
+     
         if (home) {
             home.style.display = 'none';
         }
@@ -18,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    document.querySelector('.home-01').addEventListener('click', function(e) {
+    document.querySelector('.Campaigns').addEventListener('click', function(e) {
         
-        let thisWeek = document.querySelector('.this-week');
+        let thisWeek = document.querySelector('#this-week');
         let home = document.querySelector('.home-01');
         let homeImg = document.querySelector('.home-img');
 

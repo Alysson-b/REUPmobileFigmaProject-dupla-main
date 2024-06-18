@@ -4,7 +4,7 @@
     height: 100%;
     flex-shrink: 0;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .bola{
@@ -25,12 +25,13 @@
     padding: 15px 5px;
 }
 
+
 /* ABA INICIAL */
 .section-01{
     display: flex;
     flex-direction: column;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ABA CASO CLIQUE EM CREATE MEMBBERSHIP */
@@ -38,7 +39,7 @@
     display: none;
     flex-direction: column;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	 animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -48,7 +49,7 @@
     margin: 25% 0 0 0;
     flex-direction: column;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -63,7 +64,7 @@
     display: none;
     flex-direction: column;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -74,7 +75,7 @@
     height: 100%;
     flex-shrink: 0;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ABA CASO ENTRE NORMALMENTE COM EMAIL E SENHA */
@@ -82,7 +83,7 @@
     display: none;
     flex-direction: column;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -93,7 +94,7 @@
     align-items: center;
     height: 50vh;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -103,7 +104,7 @@
     flex-direction: column;
     font-family: "DM Sans", sans-serif;
     -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -114,30 +115,30 @@
     flex-direction: column;
     gap: 30px;
     width: 345px;
-height: 50vh;
-flex-shrink: 0;
-margin-bottom: 30px;
--webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    height: 50vh;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
 .confirm-email{
     width: 375px;
-height: 50vh;
-flex-shrink: 0;
-fill: #FFF;
-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.10));
-background-color: var(--colortext-primary);
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-padding: 0 24px;
-font-family: "Inter", sans-serif;
-position: fixed;
-bottom: 0;
+    height: 50vh;
+    flex-shrink: 0;
+    fill: #FFF;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.10));
+    background-color: var(--colortext-primary);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0 24px;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    bottom: 0;
 
-animation-name: inOutAnimation;
-animation-duration: 1s;
+    animation-name: inOutAnimation;
+    animation-duration: 1s;
 }
 
 
@@ -146,14 +147,14 @@ animation-duration: 1s;
     flex-direction: column;
     justify-content: center;
     width: 375px;
-height: 261px;
-background: #FFF;
-position: fixed;
-bottom: 0;
-font-family: "Inter", sans-serif;
-padding: 0 24px;
-animation-name:bounce-in-bottom;
-animation-duration: 1s;
+    height: 261px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    font-family: "Inter", sans-serif;
+    padding: 0 24px;
+    animation-name:bounce-in-bottom;
+    animation-duration: 1s;
 }
 
 .preference{
@@ -161,12 +162,12 @@ animation-duration: 1s;
     flex-direction: column;
     bottom: 0;
     position: fixed;
-height: 100vh;
-background: #FFF;
-padding: 0 24px;
-align-items: center;
--webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    height: 100vh;
+    background: #FFF;
+    padding: 0 24px;
+    align-items: center;
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .privacy-preference{
